@@ -1,0 +1,12 @@
+# Secrets — never commit these
+.env
+.env.local
+.env.*.local
+
+# Local staging copy (not served)
+publish/
+
+# Generated / tooling
+__pycache__/
+*.pyc
+scripts/stripe_links.json
