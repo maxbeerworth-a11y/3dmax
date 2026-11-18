@@ -158,9 +158,9 @@ ul.inbundle { list-style: none; margin: 0; padding: 0; }
 .prod .pic .slide-note { position: absolute; left: 10px; right: 10px; bottom: 34px; text-align: center; pointer-events: none; z-index: 3; }
 .prod .pic .slide-note span { display: inline-block; background: rgba(23,21,15,.82); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .02em; padding: 5px 11px; border-radius: 999px; }
 .prod .pic .slide img, .prod .pic .slide video { width: 100%; height: 100%; object-fit: contain; padding: 8px; background: transparent; }
-.prod .pic .car-dots { position: absolute; bottom: 10px; left: 0; right: 0; display: flex; gap: 6px; justify-content: center; z-index: 4; pointer-events: none; }
-.prod .pic .car-dots button { width: 8px; height: 8px; border-radius: 50%; border: none; background: rgba(0,0,0,.28); padding: 0; cursor: pointer; pointer-events: auto; transition: width .2s, background .2s; }
-.prod .pic .car-dots button.on { background: var(--ink); width: 22px; border-radius: 4px; }
+.prod .pic .car-dots { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; align-items: center; justify-content: center; z-index: 4; pointer-events: none; background: rgba(0,0,0,.42); padding: 6px 10px; border-radius: 999px; backdrop-filter: blur(2px); }
+.prod .pic .car-dots button { width: 9px; height: 9px; border-radius: 50%; border: none; background: rgba(255,255,255,.6); padding: 0; cursor: pointer; pointer-events: auto; transition: width .2s, background .2s; }
+.prod .pic .car-dots button.on { background: #fff; width: 22px; border-radius: 5px; }
 .prod .pic .car-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 4; width: 36px; height: 36px; border-radius: 50%; border: none; background: rgba(255,255,255,.88); box-shadow: 0 1px 5px rgba(0,0,0,.22); font-size: 15px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--ink); }
 .prod .pic .car-arrow.prev { left: 8px; }
 .prod .pic .car-arrow.next { right: 8px; }
